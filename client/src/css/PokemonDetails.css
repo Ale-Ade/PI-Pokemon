@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://eskipaper.com/images/pokemon-backgrounds-13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.68rem;
+    text-transform: capitalize;
+}
+
+.container img {
+    margin: 2%;
+    width: 20rem;
+}
+
+.container ul {
+    list-style: none;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul li {
+    margin: 20px;
+}
+
+.container h3 {
+    font-size: 2rem;
+}
+
+.types {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.types img {
+    width: 150px;
+}
+
+@media (max-width : 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        font-size: 1.68rem;
+        text-transform: capitalize;
+    }
+
+    .container img {
+        width: 75%;
+    }
+
+    .container ul {
+        list-style: none;
+        margin-bottom: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container ul li {
+        margin: 20px;
+        text-align: left;
+    }
+
+    .container h3 {
+        font-size: 2rem;
+    }
+
+    .types {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .types img {
+        width: 120px;
+    }
+}

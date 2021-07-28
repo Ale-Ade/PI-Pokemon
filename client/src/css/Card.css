@@ -1,0 +1,347 @@
+.container {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr 3fr;
+    grid-template-columns: 1fr;
+    font-size: 1.4rem;
+    height: 450px;
+    margin: 1rem;
+    text-align: center;
+    width: 300px;
+}
+
+.container:hover {
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+.sprite {
+    width: 50%;
+    height: auto;
+    justify-self: center;
+}
+
+.id {
+    padding-top: .5rem;
+    align-self: center;
+}
+
+.name {
+    text-transform: capitalize;
+    align-self: center;
+}
+
+.types {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: .5rem;
+    padding: .5rem;
+    text-transform: capitalize;
+}
+
+.types article {
+    margin: 0 1rem;
+}
+
+.types img {
+    height: auto;
+    width: 50px;
+}
+
+.typeSingle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem;
+    padding: .5rem;
+    text-transform: capitalize;
+}
+
+.typeSingle img {
+    height: auto;
+    width: 50px;
+}
+
+.water {
+    background-image: url('../img/types-bg/water.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.water h3 {
+    color: white
+}
+
+.water h4 {
+    color: white
+}
+
+.fire {
+    background-image: url('../img/types-bg/fire.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fire h3 {
+    color: white;
+}
+
+.fire h4 {
+    color: white;
+}
+
+.grass {
+    background-image: url('../img/types-bg/grass.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bug {
+    background-image: url('../img/types-bg/bug.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.normal {
+    background-image: url('../img/types-bg/normal.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dragon {
+    background-image: url('../img/types-bg/dragon.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dark {
+    background-image: url('../img/types-bg/dark.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dark h3 {
+    color: white
+}
+
+.dark h4 {
+    color: white
+}
+
+.electric {
+    background-image: url('../img/types-bg/electric.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.electric h3 {
+    color: white
+}
+
+.electric h4 {
+    color: white
+}
+
+.fairy {
+    background-image: url('../img/types-bg/fairy.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fighting {
+    background-image: url('../img/types-bg/fighting.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ghost {
+    background-image: url('../img/types-bg/ghost.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ghost h3 {
+    color: white
+}
+
+.ghost h4 {
+    color: white
+}
+
+.ground {
+    background-image: url('../img/types-bg/ground.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ice {
+    background-image: url('../img/types-bg/ice.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poison {
+    background-image: url('../img/types-bg/poison.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poison h3 {
+    color: white
+}
+
+.poison h4 {
+    color: white
+}
+
+.psychic {
+    background-image: url('../img/types-bg/psychic.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.psychic h3 {
+    color: white
+}
+
+.psychic h4 {
+    color: white
+}
+
+.rock {
+    background-image: url('../img/types-bg/rock.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.steel {
+    background-image: url('../img/types-bg/steel.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.steel h3 {
+    color: white
+}
+
+.steel h4 {
+    color: white
+}
+
+.flying {
+    background-image: url('../img/types-bg/flying.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width:700px) {
+    .container {
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.4rem;
+        height: 100px;
+        margin: 1rem;
+        padding: 0 5px;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .container:hover {
+        animation: none;
+    }
+
+    .sprite {
+        height: 75px;
+        width: auto;
+        margin: 0 10px;
+    }
+
+    .id {
+        padding-top: .5rem;
+    }
+
+    .name {
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+
+    .types {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+    }
+
+    .types article {
+        margin: 0 10px;
+    }
+
+    .types article h4 {
+        display: none;
+    }
+
+    .types img {
+        height: auto;
+        width: 50px;
+    }
+
+    .typeSingle {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 10px;
+        text-transform: capitalize;
+    }
+
+    .typeSingle h4 {
+        display: none;
+    }
+
+    .typeSingle img {
+        height: auto;
+        width: 50px;
+    }
+}

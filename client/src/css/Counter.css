@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container h4 {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    border-bottom: .5px solid #fff;
+    width: 80%;
+    text-align: center;
+}
+
+.container h5 {
+    font-size: 1.05rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 2%;
+}
+
+@media (max-width: 700px) {
+    .container {
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .container h4 {
+        text-align: center;
+    }
+
+    .container h5 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,134 @@
+body {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #b0ec0a, hsl(66, 39%, 28%), #0f0c29);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.asideContainer {
+    margin: 2% 0;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardsContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+}
+
+.cardsContainer a {
+    text-decoration: none;
+    color: black;
+}
+
+.pagesContainer {
+    margin: 1rem;
+}
+
+.titleMobile {
+    display: none;
+}
+
+.hamburguerCheck {
+    display: none;
+}
+
+.hamburguerContainer {
+    cursor: pointer;
+    width: 35px;
+}
+
+.hamburguer {
+    width: 100%;
+    height: 5px;
+    background-color: #cdcdcd;
+    border-radius: 25px;
+    margin: 3px 0;
+    display: none;
+}
+
+.asideScroll,
+.asideSort,
+.asideFilter,
+.counter {
+    width: 100%;
+}
+
+@media (max-width:700px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .asideContainer {
+        width: 90%;
+
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+    .asideScroll,
+    .asideSort,
+    .asideFilter,
+    .counter {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        visibility: hidden;
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburguerCheck:checked~.asideScroll,
+    .hamburguerCheck:checked~.asideSort,
+    .hamburguerCheck:checked~.asideFilter,
+    .hamburguerCheck:checked~.counter {
+        visibility: visible;
+        display: block;
+        transition: all 2s ease-in-out;
+    }
+
+    .cardsContainer {
+        order: 1;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .pagesContainer {
+        order: 2;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+
+
+}

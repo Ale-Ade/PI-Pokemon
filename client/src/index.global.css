@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('./spinner.css');
+
+*,
+*::after,
+*::before {
+  margin: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+nav {
+  top: 0;
+  margin: 20px;
+}
+
+.navpag {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+}
+

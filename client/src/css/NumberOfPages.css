@@ -1,0 +1,11 @@
+.selectContainer {
+    font-size: 1rem;
+    height: 2rem;
+    width: 100%;
+    border: 1px solid black;
+    margin: 1rem auto;
+    background: #D3CCE3;
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    border: none;
+}

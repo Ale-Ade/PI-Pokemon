@@ -1,0 +1,163 @@
+.container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.header {
+    background-image: url('/src/img/header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    width: 100%;
+}
+
+.header .pContainer {
+    width: 50%;
+}
+
+.header .pContainer h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.buttonContainer {
+    padding-top: 25rem;
+    padding-left: 10rem;
+}
+
+.header .button {
+    background-color: #0056a0;
+    border-radius: 15px;
+    border: .5px solid #8a2520;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    height: 5rem;
+    outline: none;
+    width: 12rem;
+}
+
+.header .button:hover {
+    background-color: #95ceff;
+    border: .5px solid rgb(0, 84, 167);
+    transition: all .4s ease-in-out;
+}
+
+.section {
+    width: 100%;
+}
+
+.articleToRight {
+    align-items: center;
+    background-color: #FF851B;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 10%;
+}
+
+.articleToRight p {
+    flex-basis: 60%;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.articleToRight img {
+    flex-basis: 40%;
+    width: 20%;
+    padding: 0 50px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.articleToLeft {
+    align-items: center;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 10%;
+}
+
+.articleToLeft p {
+    flex-basis: 60%;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    order: 2;
+    text-align: center;
+}
+
+.articleToLeft img {
+    width: 20%;
+    border: none;
+    flex-basis: 40%;
+    flex-grow: 1;
+    height: fit-content;
+    order: 1;
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        height: 35rem;
+        width: 100%;
+    }
+
+    .header .pContainer {
+        width: 50%;
+        margin: 20% auto;
+    }
+
+    .header .pContainer h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .buttonContainer {
+        padding-top: 0rem;
+        padding-left: 0rem;
+    }
+
+    .header .button {
+        height: 4rem;
+    }
+
+    .articleToRight {
+        padding: 5%;
+    }
+
+    .articleToRight p {
+        font-size: 1.4rem;
+    }
+
+    .articleToRight img {
+        height: fit-content;
+        width: 20%;
+    }
+
+    .articleToLeft {
+        padding: 5%;
+    }
+
+    .articleToLeft p {
+        font-size: 1.4rem;
+    }
+
+    .articleToLeft img {
+        height: fit-content;
+        width: 20%;
+    }
+}

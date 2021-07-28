@@ -1,0 +1,44 @@
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.buttonContainer h4 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    border-bottom: .5px solid #000;
+    width: 80%;
+}
+
+.buttonContainer button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: lighter;
+    font-size: 1rem;
+    margin: .3rem;
+    outline: none;
+    text-align: left;
+    width: fit-content;
+}
+
+.buttonContainer button:hover {
+    text-decoration: underline;
+}
+
+.buttonContainer button:hover:disabled {
+    cursor: initial;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .buttonContainer {
+        margin: 0;
+    }
+}

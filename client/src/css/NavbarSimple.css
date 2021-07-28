@@ -1,0 +1,24 @@
+.navbar {
+    align-items: center;
+    align-items: center;
+    background: #E6473D;
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    padding: 0 2%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar .mainIcon {
+    border-radius: 15px;
+    height: 65px;
+    width: 65px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        position: relative;
+    }
+}
